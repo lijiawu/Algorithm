@@ -1,0 +1,18 @@
+Floyd
+MAX_NODE
+
+Path[MAX_NODE][MAX_NODE]
+Matrix[MAX_NODE][MAX_NODE]
+
+def Algo(){
+	for(i = 0;i<MAX_NODE;i++){# throgh i
+		for(j = 0;j<MAX_NODE;j++){
+			for(k = 0;k<MAX_NODE;k++){
+				if(Matrix[j][k]>Matrix[j][i]+Matrix[i][k]){
+					Matrix[j][k] = Matrix[j][i]+Matrix[i][k]
+					Path[j][k] = i;
+				}
+			}
+		}
+	}
+}

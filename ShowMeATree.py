@@ -164,7 +164,9 @@ root.insertLeft('b')
 showMeATree(root)
 root.insertRight('c')
 showMeATree(root)
-root.insertRight('d')
+root.insertLeft('d')
+order = showMeATree(root)
+root.insertRight('e')
 order = showMeATree(root)
 
 for node in order:
